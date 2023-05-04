@@ -37,7 +37,7 @@
     firstName.addEventListener('change', function(e){
         let first = firstName.value;
         let last = lastName.value;
-        let fullName = `${first} ${last}!!`;
+        let fullName = `${first} ${last}!`;
         if (fullName.length>1){
             full.classList.remove("hidden")
         }else{
@@ -49,7 +49,7 @@
         let first = firstName.value;
         let last = lastName.value;
         let fullName = `${first} ${last}!!`;
-        full.textContent = fullName;
+        full.textContent = `Hello ${fullName}!`;
     })
     clearButton.addEventListener('click', function(e){
         firstName.value = "";
