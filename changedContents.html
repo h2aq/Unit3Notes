@@ -56,6 +56,17 @@
         lastName.value = "";
         full.textContent = "";
     })
+    function nameCreator(){
+    let first = firstName.value;
+    let last = lastName.value;
+    let fullName = `${first} ${last}`;
+    if (fullName.length>1){
+        full.classList.remove("hidden")
+    } else {
+        full.classList.add("hidden")
+    }
+    full.textContent = `Hello ${fullName}!`;
+    }
 </script>
 </body>
 </html>
