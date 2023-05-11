@@ -7,18 +7,33 @@
 </head>
 <body>
 <div class="container">
-    <div class="content"><h3>CHOOSE YOUR AVATAR</h3></div>
+    <div class="content">
+        <h2>CHOOSE YOUR AVATAR</h2>
+    </div>
+    <img src="https://www.creativefabrica.com/wp-content/uploads/2021/07/16/Silhouette-Head-of-Man-Illustration-Graphics-14820402-1-580x386.jpg">
     <div class="row">
-        <button id="Avatar1">Meat lord</button>
-        <button id="Avatar2">Nautilodaunt</button>
-        <button id="Avatar3">Agamatsu</button>
+        <button id="1">Meat lord</button>
+        <button id="2">Nautilodaunt</button>
+        <button id="3">Agamatsu</button>
     </div>
     <div class="row">
-        <button id="Avatar4">Enforcer</button>
-        <button id="Avatar5">Cat</button>
-        <button id="Avatar6">toad</button>
+        <button id="4">Enforcer</button>
+        <button id="5">Cat</button>
+        <button id="6">toad</button>
     </div>
-
 </div>
+<script>
+    const picture = document.querySelector('.img');
+    const avatar1 = document.getElementById("1");
+    const avatar2 = document.getElementById("2");
+    const avatar3 = document.getElementById("3");
+    const avatar4 = document.getElementById("4");
+    const avatar5 = document.getElementById("5");
+    const avatar6 = document.getElementById("6");
+
+    avatar1.addEventListener('click', function(){
+        picture.src='https://www.upload.wikimedia.org/wikipedia/commons/0/0e/Lakeyboy_Silhouette.PNG'
+    })
+</script>
 </body>
 </html>
