@@ -8,7 +8,7 @@
 <body>
 <div class="container">
     <div class="content">
-        <h1>Clicking Game</h1><h4>Click to get points!</h4><h3>Can you get to 300 points?</h3>
+        <h1>Clicking Game</h1><h4>Click to get points!</h4><h3>Can you get to 50,000 points?!</h3>
         <p>You currently have 0 score</p>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4teezohIyKukE3jqjz_cKdkPHap12D_kIhw&usqp=CAU" style="height: 125px">
         <div class="row">
@@ -18,26 +18,31 @@
         <div class="row">
             <h4>SHOP</h4>
         </div>
-        <button id="pointMore">+1 point (50 points)</button>
-        <button id="timesMore">x2 points (250 points)</button>
+        <button id="pointMore">+1 point (25 points)</button>
+        <button id="pointMore2">+5 points (350 points)</button>
+        <button id="timesMore">x2 points (20000 points)</button>
     </div>
 </div>
 <script>
     const button = document.getElementById('click')
     const clear = document.getElementById('clear')
     const multiplier = document.getElementById('pointMore')
+    const multiplier2 = document.getElementById('pointMore2')
     const timesMultiplier = document.getElementById('timesMore')
     const picture = document.querySelector('img')
     const visualScore = document.querySelector('p')
-    const pointBuy2 = 250
+    const pointBuy2 = 20000
     const baby = 1
     const HighScore1 = 50
     const HighScore2 = 100
     const HighScore3 = 300
-    const pointBuy = 50
+    const EndGoal = 50000
+    let pointBuy = 25
+    let pointBuy3 = 300
     let clickScore = 0
     let pointMultiplier = 1
     let pointMultiplier2 = 1
+    let pointMultiplier3 = 5
 
 
     button.addEventListener('click', function(e){
@@ -53,7 +58,24 @@
         }
         if (clickScore >= HighScore3){
             picture.src='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c779e294-dacd-4aed-bfe5-61da5a26c767/d4uq6x9-0d94c771-f253-477e-b16e-a58c661d9321.png/v1/fill/w_150,h_200/my_roblox_avatar_by_nettimato_d4uq6x9-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjAwIiwicGF0aCI6IlwvZlwvYzc3OWUyOTQtZGFjZC00YWVkLWJmZTUtNjFkYTVhMjZjNzY3XC9kNHVxNng5LTBkOTRjNzcxLWYyNTMtNDc3ZS1iMTZlLWE1OGM2NjFkOTMyMS5wbmciLCJ3aWR0aCI6Ijw9MTUwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.lz1WANp-Ju9OrHtg4AVshsNWfMMyWUsNe5vefyirTf4'
-            visualScore.textContent = `You currently have ${clickScore} score! You win!`
+        }
+        if (clickScore >= EndGoal){
+            picture.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaVLRgId0poCHzFu6f00oqns7fGDbnh3gDBQ&usqp=CAU'
+        }
+        if (clickScore < baby){
+            picture.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4teezohIyKukE3jqjz_cKdkPHap12D_kIhw&usqp=CAU'
+        }
+        if (clickScore < HighScore1){
+            picture.src='https://upload.wikimedia.org/wikipedia/en/d/d4/Donkey_Kong_character.png'
+        }
+        if (clickScore < HighScore2){
+            picture.src='https://upload.wikimedia.org/wikipedia/en/d/d1/Toad_3D_Land.png'
+        }
+        if (clickScore < HighScore3){
+            picture.src='https://i.etsystatic.com/36188206/r/il/2620fd/3990791960/il_fullxfull.3990791960_5ken.jpg'
+        }
+        if (clickScore < EndGoal){
+            picture.src='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c779e294-dacd-4aed-bfe5-61da5a26c767/d4uq6x9-0d94c771-f253-477e-b16e-a58c661d9321.png/v1/fill/w_150,h_200/my_roblox_avatar_by_nettimato_d4uq6x9-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjAwIiwicGF0aCI6IlwvZlwvYzc3OWUyOTQtZGFjZC00YWVkLWJmZTUtNjFkYTVhMjZjNzY3XC9kNHVxNng5LTBkOTRjNzcxLWYyNTMtNDc3ZS1iMTZlLWE1OGM2NjFkOTMyMS5wbmciLCJ3aWR0aCI6Ijw9MTUwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.lz1WANp-Ju9OrHtg4AVshsNWfMMyWUsNe5vefyirTf4'
         }
         visualScore.textContent = `You currently have ${clickScore} score`
     })
@@ -66,13 +88,24 @@
         if (clickScore >= pointBuy) {
             pointMultiplier++;
             clickScore-=pointBuy;
+            pointBuy+=2
             visualScore.textContent = `You currently have ${clickScore} score`
+            multiplier.textContent = `+1 point (${pointBuy} score)`
+        }
+    })
+    multiplier2.addEventListener('click', function(e){
+        if (clickScore >= pointBuy3) {
+            pointMultiplier++;
+            clickScore-=pointBuy3;
+            pointBuy+=2
+            visualScore.textContent = `You currently have ${clickScore} score`
+            multiplier.textContent = `+5 point (${pointBuy3} score)`
         }
     })
     timesMultiplier.addEventListener('click', function(e){
         if (clickScore >= pointBuy2){
             clickScore-=pointBuy2;
-            pointMultiplier2+2;
+            pointMultiplier2 = 2;
             visualScore.textContent = `You currently have ${clickScore} score`
         }
     })
