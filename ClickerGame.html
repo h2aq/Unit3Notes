@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>Click Game</title>
+    <title>Da Deep Clicker</title>
+    <style>
+
+    </style>
 </head>
 <body>
 <div class="container">
     <div class="content">
-        <h1>Clicking Game</h1><h4>Click to get points!</h4><h3>Can you get to 50,000 points?!</h3>
-        <p>You currently have 0 score</p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4teezohIyKukE3jqjz_cKdkPHap12D_kIhw&usqp=CAU" style="height: 125px">
+        <h1>Da Deep Clicker</h1><h4>Click to get Notes!</h4><h3>Can you get to 50,000 Notes?!</h3>
+        <p>You currently have 0 Notes</p>
+        <img src="https://cdntube.b-cdn.net/thumbnails/ca645b5fa25d68460e72534e3396ecc8f8af93f8.jpg" style="height: 125px">
         <div class="row">
             <button id="click">Click</button>
             <button id="clear">Clear Data</button>
@@ -18,9 +21,12 @@
         <div class="row">
             <h4>SHOP</h4>
         </div>
+        <div class="row">
+            <img src="data:image/jpeg;base64,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" style="height: 125px">
+        </div>
         <button id="pointMore">+1 point (25 points)</button>
         <button id="pointMore2">+5 points (350 points)</button>
-        <button id="timesMore">x2 points (20000 points)</button>
+        <button id="timesMore">x2 points (20,000 points)</button>
     </div>
 </div>
 <script>
@@ -36,77 +42,101 @@
     const HighScore1 = 50
     const HighScore2 = 100
     const HighScore3 = 300
+    const HighScore4 = 400
+    const HighScore5 = 500
+    const HighScore6 = 700
+    const HighScore7 = 800
+    const HighScore8 = 900
+    const HighScore9 = 1500
+    const HighScore10 = 10000
     const EndGoal = 50000
+    const HighestEndGoal = 1000000000000
     let pointBuy = 25
-    let pointBuy3 = 300
+    let pointBuy3 = 350
     let clickScore = 0
     let pointMultiplier = 1
     let pointMultiplier2 = 1
-    let pointMultiplier3 = 5
+    let pointMultiplier3 = 0
 
 
     button.addEventListener('click', function(e){
-        clickScore+=pointMultiplier*=pointMultiplier2;
+        clickScore+=pointMultiplier+=pointMultiplier3*=pointMultiplier2;
         if (clickScore >= baby){
-            picture.src='https://upload.wikimedia.org/wikipedia/en/d/d4/Donkey_Kong_character.png'
+            picture.src='https://cdntube.b-cdn.net/thumbnails/49e0a65cb2aa3f2d79d679343a853f0e7753eceb.jpg?v=19700101120000'
         }
         if (clickScore >= HighScore1){
-            picture.src='https://upload.wikimedia.org/wikipedia/en/d/d1/Toad_3D_Land.png'
+            picture.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN_E5mQpQHZ440Uxy6vahwi1v2_iB2Pe16dA&usqp=CAU'
         }
         if (clickScore >= HighScore2){
-            picture.src='https://i.etsystatic.com/36188206/r/il/2620fd/3990791960/il_fullxfull.3990791960_5ken.jpg'
+            picture.src='https://media.tenor.com/Ox--iIn7qksAAAAd/enforcer-deepwoken.gif'
         }
         if (clickScore >= HighScore3){
             picture.src='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c779e294-dacd-4aed-bfe5-61da5a26c767/d4uq6x9-0d94c771-f253-477e-b16e-a58c661d9321.png/v1/fill/w_150,h_200/my_roblox_avatar_by_nettimato_d4uq6x9-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjAwIiwicGF0aCI6IlwvZlwvYzc3OWUyOTQtZGFjZC00YWVkLWJmZTUtNjFkYTVhMjZjNzY3XC9kNHVxNng5LTBkOTRjNzcxLWYyNTMtNDc3ZS1iMTZlLWE1OGM2NjFkOTMyMS5wbmciLCJ3aWR0aCI6Ijw9MTUwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.lz1WANp-Ju9OrHtg4AVshsNWfMMyWUsNe5vefyirTf4'
         }
+        if (clickScore >= HighScore4){
+            picture.src='https://i.ytimg.com/vi/k8NFBcfvr3Y/hqdefault.jpg'
+        }
+        if (clickScore >= HighScore5){
+            picture.src='https://media.tenor.com/_KEYQjLBdXAAAAAM/deepwoken-duke.gif'
+        }
+        if (clickScore >= HighScore6){
+            picture.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlSA1N5tP32b906blepI0TeiKo8f6d2IIXuHHjEZ92WStJnfUW8r9saKAB7cn_Dvwu86A&usqp=CAU'
+        }
+        if (clickScore >= HighScore7){
+            picture.src='https://media.tenor.com/DaysK8T6PlUAAAAC/deepwoken-agamastu.gif'
+        }
+        if (clickScore >= HighScore8){
+            picture.src='https://media.tenor.com/8gbm3ynxH10AAAAd/agamatsu-griddy.gif'
+        }
+        if (clickScore >= HighScore9){
+            picture.src='https://yt3.googleusercontent.com/ytc/AGIKgqNNXxdzQ3caP283iSO5HXZgcoBAH_vnwYHS5gUx-A=s900-c-k-c0x00ffffff-no-rj'
+        }
+        if (clickScore >= HighScore10){
+            picture.src='https://media.tenor.com/U9JqyOKXV8sAAAAC/deepwoken-agamatsu.gif'
+        }
         if (clickScore >= EndGoal){
             picture.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaVLRgId0poCHzFu6f00oqns7fGDbnh3gDBQ&usqp=CAU'
         }
-        if (clickScore < baby){
-            picture.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4teezohIyKukE3jqjz_cKdkPHap12D_kIhw&usqp=CAU'
+        if (clickScore >= HighestEndGoal){
+            picture.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSxxg38Cofsn1Dr9i0YjF_kHlp8YR9V1Ct2Q&usqp=CAU'
         }
-        if (clickScore < HighScore1){
-            picture.src='https://upload.wikimedia.org/wikipedia/en/d/d4/Donkey_Kong_character.png'
-        }
-        if (clickScore < HighScore2){
-            picture.src='https://upload.wikimedia.org/wikipedia/en/d/d1/Toad_3D_Land.png'
-        }
-        if (clickScore < HighScore3){
-            picture.src='https://i.etsystatic.com/36188206/r/il/2620fd/3990791960/il_fullxfull.3990791960_5ken.jpg'
-        }
-        if (clickScore < EndGoal){
-            picture.src='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c779e294-dacd-4aed-bfe5-61da5a26c767/d4uq6x9-0d94c771-f253-477e-b16e-a58c661d9321.png/v1/fill/w_150,h_200/my_roblox_avatar_by_nettimato_d4uq6x9-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjAwIiwicGF0aCI6IlwvZlwvYzc3OWUyOTQtZGFjZC00YWVkLWJmZTUtNjFkYTVhMjZjNzY3XC9kNHVxNng5LTBkOTRjNzcxLWYyNTMtNDc3ZS1iMTZlLWE1OGM2NjFkOTMyMS5wbmciLCJ3aWR0aCI6Ijw9MTUwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.lz1WANp-Ju9OrHtg4AVshsNWfMMyWUsNe5vefyirTf4'
-        }
-        visualScore.textContent = `You currently have ${clickScore} score`
+        visualScore.textContent = `You currently have ${clickScore} Notes`
     })
     clear.addEventListener('click', function(e){
         clickScore = 0
-        picture.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4teezohIyKukE3jqjz_cKdkPHap12D_kIhw&usqp=CAU'
-        visualScore.textContent = `You currently have ${clickScore} score`
+        pointMultiplier = 1
+        pointMultiplier2 = 1
+        pointMultiplier3 = 0
+        pointBuy = 25
+        pointBuy3 = 350
+        multiplier.textContent = `+1 point (${pointBuy} score)`
+        multiplier2.textContent = `+1 point (${pointBuy3} score)`
+        picture.src='https://cdntube.b-cdn.net/thumbnails/ca645b5fa25d68460e72534e3396ecc8f8af93f8.jpg'
+        visualScore.textContent = `You currently have ${clickScore} Notes`
     })
     multiplier.addEventListener('click', function(e){
         if (clickScore >= pointBuy) {
             pointMultiplier++;
             clickScore-=pointBuy;
             pointBuy+=2
-            visualScore.textContent = `You currently have ${clickScore} score`
+            visualScore.textContent = `You currently have ${clickScore} Notes`
             multiplier.textContent = `+1 point (${pointBuy} score)`
         }
     })
     multiplier2.addEventListener('click', function(e){
         if (clickScore >= pointBuy3) {
-            pointMultiplier++;
+            pointMultiplier3+=5;
             clickScore-=pointBuy3;
-            pointBuy+=2
-            visualScore.textContent = `You currently have ${clickScore} score`
-            multiplier.textContent = `+5 point (${pointBuy3} score)`
+            pointBuy3+=100
+            visualScore.textContent = `You currently have ${clickScore} Notes`
+            multiplier2.textContent = `+5 point (${pointBuy3} score)`
         }
     })
     timesMultiplier.addEventListener('click', function(e){
         if (clickScore >= pointBuy2){
             clickScore-=pointBuy2;
             pointMultiplier2 = 2;
-            visualScore.textContent = `You currently have ${clickScore} score`
+            visualScore.textContent = `You currently have ${clickScore} Notes`
         }
     })
 
